@@ -11,6 +11,7 @@ const Listings = () => {
   const marketplace = useMarketplace(
     process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS
   );
+  console.log(process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS)
 
   useEffect(() => {
     if (!address) router.replace("/");

@@ -1,71 +1,312 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-.home {
-  height: 100vh;
-  width: 100vw;
+.navbar {
+  display: flex;
+  background-color: rgba(255, 254, 242, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.leftNav {
+  width: 25%;
+  display: flex;
+}
+.leftNav img {
+  width: 20%;
+  padding-left: 56px;
+  text-align: center;
+  justify-content: center;
+  border: 6px solid rgba(255, 254, 242, 255);
+}
+.leftNav div {
+  text-align: center;
+  padding-top: 23px;
+  justify-content: center;
+  font-size: 30px;
+  padding: 29px 25px;
+}
+
+.midNav {
+  width: 35%;
+  text-align: center;
+  padding-top: 20px;
+}
+.midNav .search {
+  padding: 0 15px;
+}
+.midNav input {
+  width: 92%;
+  height: 69%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+}
+
+.rightNav {
+  font-size: large;
+  width: 40%;
+
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+}
+
+.rightNav li {
+  padding: 33px 59px;
+}
+
+.rightNav li a {
+  text-decoration: none;
+  color: black;
+  font: 23px solid black;
+}
+
+.box-main {
+  background-color: rgba(251, 251, 251, 255);
+  display: flex;
+}
+
+.firstHalf {
+  width: 55%;
+
+  padding: 35px 79px;
+  align-items: center;
+  justify-content: center;
+}
+.firstHalf h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 63px;
+  font-weight: 500;
+  /* padding: 77px 35px; */
+  padding-top: 100px;
+}
+.firstHalf h4 {
+  font-size: 25px;
+  padding-left: 0px;
+  padding-top: 25px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.firstHalf-btn-container button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  background: rgb(3, 109, 174);
+  color: aliceblue;
+  font: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.firstHalf-learnMore {
+  padding-left: 12px;
+}
+.firstHalf-learnMore a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*This iss where the second half begins*/
+.secondHalf {
+  background-color: rgba(251, 251, 251, 255);
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.home__button {
-  padding: 15px;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  background-color: yellow;
+.mainImg {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.listings {
-  height: 100vh;
-  width: 100vw;
+.secondHalf-imageDescription {
   display: flex;
+  z-index: 1;
+}
+
+.secondHalf-imageDescription-logo img {
+  padding: 0px;
+  width: 60px;
+}
+
+.secondHalf-imageDescription-name {
+  font-size: 26px;
+  display: block;
+  padding-right: 200px;
+}
+.secondHalf-imageDescription-firstname {
+  font-size: 26px;
+  font: bolder;
+}
+.secondHalf-imageDescription-secondname {
+  font-size: 19px;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.secondHalf-imageDescription-knowMore img {
+  padding: 16px;
+  width: 30px;
+}
+
+/*second section css */
+.secondSection {
+  background-color: rgba(251, 251, 251, 255);
+}
+
+.secondSection-heading {
   align-items: center;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-size: 75px;
   justify-content: center;
+  margin-left: 502px;
+  /* display: inline; */
+  padding-top: 76px;
 }
 
-.listingCard {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.secondSection-images {
   display: flex;
-  justify-content: space-between;
-  width: 70vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.listingCard__container {
+.secondSection-images img {
+  padding-top: 20px;
+  width: 88%;
+  height: 88%;
+  /* margin: 54px; */
+  /* justify-content: left; */
+}
+
+.secondSection-individual-image1 {
+  margin: 23px 23px 23px 23px;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.secondSection-individual-image2 {
+  margin: 23px 23px 23px 23px;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+}
+
+.secondSection-individual-image3 {
+  margin: 23px 23px 23px 23px;
+  /* justify-content: left;
+  align-items: flex-start; */
+}
+
+.secondSection-images a {
+  display: flex;
+  width: 100%;
+}
+
+/* Third secction*/
+.thirdSection {
+  background-color: rgba(251, 251, 251, 255);
+}
+
+.thirdSection-heading {
+  align-items: center;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-size: 75px;
+  justify-content: center;
+  margin-left: 502px;
+  /* display: inline; */
+  padding-top: 76px;
+}
+
+.thirdSection-div1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.thirdSection-links {
+  margin-top: 20px;
+  margin: 44px;
+  font-size: 30px;
+  margin-bottom: 175px;
+  padding-left: 0px;
+  padding: 25px;
+  border-radius: 47px;
+  border: 2px solid gray;
+  width: 32%;
+  background: rgb(37 145 96);
+  color: aliceblue;
+  font: bolder;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Fourth Section*/
+.fourthSection {
+  /*background-color: rgba(251, 251, 251, 255);*/
+  background-color: darkseagreen;
+}
+
+.fourthSection-heading {
+  align-items: center;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-size: 75px;
+  justify-content: center;
+  margin-left: 672px;
+  /* display: inline; */
+  padding-top: 76px;
+}
+
+.fourthSection-container {
   display: flex;
 }
 
-.listingCard__image {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  margin-right: 30px;
+.fourthSection-container1 {
+  margin: 58px 177px;
+  padding: 27px;
+  width: 50%;
 }
 
-.listingCard__button {
-  padding: 15px;
+.fourthSection-container1-heading {
+  font: 40px solid black;
+  font-weight: 200;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.fourthSection-container1-subheading {
+  font-size: 23px;
+}
+
+.fourthSection-container1-inputbox input {
+  width: 76%;
+  /* height: 73%; */
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  border: 14px solid white;
+  border-radius: 14px;
+  padding: -3px;
+}
+
+.fourthSection-Container1-signup {
+  color: darkolivegreen;
+  border: 13px solid white;
   border-radius: 5px;
-  height: 100px;
-  border: none;
-  font-size: 18px;
-  background-color: yellow;
+  size: 25px;
+}
+
+.fourthSection-container2 {
+  margin: 57px 54px;
+  padding: 22px;
+  width: 50%;
+}
+
+.fourthSection-container2-subheading {
+  font: 32px solid black;
+  font-weight: 200;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
