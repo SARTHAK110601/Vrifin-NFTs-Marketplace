@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
+import Creator from "./creator";
 
 export default function Home() {
   const connectWithMetamask = useMetamask();
@@ -11,7 +12,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // if (address) router.replace("/listings");
+    if (address) router.replace("/listings");
   }, [address]);
 
   return (
@@ -62,7 +63,9 @@ export default function Home() {
             <a href="exploreNFTs.html">Explore</a>
           </li>
           <li>
-            <button className="home__button">Connect using Metamask</button>
+            <button className="home__button" onClick={connectWithMetamask}>
+              Connect using Metamask
+            </button>
           </li>
           <li>
             <a href="about.html">About us</a>
@@ -73,10 +76,8 @@ export default function Home() {
       <section className="firstSection">
         <div className="box-main">
           <div className="firstHalf">
-            <h1>Discover, rent, and collect unique NFTs</h1>
-            <h4>
-              Vrifin is the world's first and largest NFT renting marketplace
-            </h4>
+            <h1>Discover, Mint and Market your NFTs</h1>
+            <h4>Vrifin is the world's first and largest NFT marketing place</h4>
             <div className="firstHalf-btn-container">
               <button>Explore NFTs</button>
             </div>
@@ -109,26 +110,26 @@ export default function Home() {
       <section className="secondSection">
         <div className="secondSection-heading">Featured Vrifin NFTs</div>
         <div className="secondSection-images">
-          <a href="https://opensea.io/assets/0x497a9a79e82e6fc0ff10a16f6f75e6fcd5ae65a8/3056">
+          <a href="https://www.nike.com/in/">
             <img
               className="secondSection-individual-image1"
-              src="./img/Bored-Ape gif.gif"
+              src="./img/nike shoes.jpg"
               alt="nft1"
             />
           </a>
 
-          <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/528">
+          <a href="https://about.facebook.com/">
             <img
               className="secondSection-individual-image2"
-              src="./img/crypto punks gif.gif"
+              src="./img/meta.jpg"
               alt="nft2"
             />
           </a>
 
-          <a href="https://opensea.io/assets/solana/4fy3hAmMcbawW8H21DLFX6fGxT18ttKZju7fj54pKgdD">
+          <a href="https://www2.hm.com/en_in/index.html">
             <img
               className="secondSection-individual-image3"
-              src="./img/other gif.gif"
+              src="./img/hm-symbol-logo.png"
               alt="nft3"
             />
           </a>

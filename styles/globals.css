@@ -14,18 +14,19 @@
   display: flex;
 }
 .leftNav img {
-  width: 20%;
+  width: 46%;
   padding-left: 56px;
   text-align: center;
   justify-content: center;
   border: 6px solid rgba(255, 254, 242, 255);
 }
+
 .leftNav div {
   text-align: center;
   padding-top: 23px;
   justify-content: center;
   font-size: 30px;
-  padding: 29px 25px;
+  padding: 49px 25px;
 }
 
 .midNav {
@@ -64,8 +65,12 @@
 }
 
 .box-main {
-  background-color: rgba(251, 251, 251, 255);
+  /* background-color: rgba(251, 251, 251, 255); */
   display: flex;
+  background-image: /*linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),*/ url("/public/img/background1.jpeg");
 }
 
 .firstHalf {
@@ -157,6 +162,8 @@
 /*second section css */
 .secondSection {
   background-color: rgba(251, 251, 251, 255);
+  margin: 23px 0px;
+  padding: 23px;
 }
 
 .secondSection-heading {
@@ -164,6 +171,8 @@
   /* font-family: "Ubuntu", sans-serif; */
   font-size: 75px;
   justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
   margin-left: 502px;
   /* display: inline; */
   padding-top: 76px;
@@ -219,7 +228,9 @@
   justify-content: center;
   margin-left: 502px;
   /* display: inline; */
-  padding-top: 76px;
+  padding-top: 123px;
+  margin: 23px 0p;
+  padding-bottom: 61px;
 }
 
 .thirdSection-div1 {
@@ -280,6 +291,7 @@
 
 .fourthSection-container1-subheading {
   font-size: 23px;
+  margin: 12px 0px;
 }
 
 .fourthSection-container1-inputbox input {
@@ -288,8 +300,9 @@
   border: 1px solid gainsboro;
   border-radius: 15px;
   border: 14px solid white;
-  border-radius: 14px;
-  padding: -3px;
+  border-radius: 10px;
+  padding: 0px;
+  margin-right: 10px;
 }
 
 .fourthSection-Container1-signup {
