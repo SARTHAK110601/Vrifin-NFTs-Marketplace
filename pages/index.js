@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import Creator from "./creator";
+import Creator from "./creator.js";
 
 export default function Home() {
   const connectWithMetamask = useMetamask();
@@ -139,7 +139,7 @@ export default function Home() {
       <section className="thirdSection">
         <div className="thirdSection-heading">Tell us about you</div>
         <div className="thirdSection-div1">
-          <a href="/creator.html" className="thirdSection-links">
+          <a href="creator.js" className="thirdSection-links">
             Creator
           </a>
           <a href="/coorporate.html" className="thirdSection-links">
